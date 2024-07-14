@@ -218,9 +218,28 @@ def get_user_menu():
 
 @app.route('/api/admin/menu', methods=['GET'])
 def get_admin_menu_items():
-    try:
+    try: @app.route('/api/admin/menu', methods=['POST'])
+def
         menu_items = MenuItem.query.all()
         serialized_menu = [item.serialize() for item in menu_items]
         return jsonify(serialized_menu), 200
     except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    add_menu_item():
+    try:
+        new_item_data = request.json
+        new_item = MenuItem(
+            name=new_item_data['name'],
+            description=new_item_data.get('description', ''),
+            price=float(new_item_data['price']),
+            availability=new_item_data.get('availability', True)  # Assuming default availability is True
+        )
+        db.session.add(new_item)
+        db.session.commit()
+        return jsonify({'message': 'Menu item added successfully'}), 201
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({'error': 'Menu item already exists'}), 400
+    except Exception as e:
+        db.session.rollback()
         return jsonify({'error': str(e)}), 500
