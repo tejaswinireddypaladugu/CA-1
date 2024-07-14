@@ -1,0 +1,109 @@
+/* Home.css */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffaf0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    background-image: url('C:/Users/Admin/Documents/Bakery/sunshine_bakery/frontend/public/images/header.jpg');
+}
+
+.home-container h1 {
+    color: #d2691e;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-buttons button {
+    background-color: #d2691e;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+    background-color: #a0522d;
+}
+
+.component-container {
+    margin-top: 20px;
+}
+
+.component-container > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container, .login-container, .menu-container, .contactus-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #d2691e;
+    border-radius: 10px;
+    background-color: #fffaf0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: center;
+}
+
+.register-container h2, .login-container h2, .menu-container h2, .contactus-container h2 {
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+.register-container input, .login-container input, .contactus-container input, .contactus-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #d2691e;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-container button, .login-container button, .contactus-container button {
+    background-color: #d2691e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover, .login-container button:hover, .contactus-container button:hover {
+    background-color: #a0522d;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #d2691e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #555;
+    margin-bottom: 10px;
+}
