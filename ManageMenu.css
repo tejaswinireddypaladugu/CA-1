@@ -1,0 +1,111 @@
+/* ManageMenu.css */
+
+.manage-menu {
+    width: 1150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffaf0;
+    border: 2px solid #d2691e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('C:/Users/Admin/Documents/Bakery/sunshine_bakery/frontend/public/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.manage-menu h1 {
+    text-align: center;
+    color: #d2691e;
+    margin-bottom: 20px;
+    background-image: url('C:/Users/Admin/Documents/Bakery/sunshine_bakery/frontend/public/images/header.jpg');
+}
+
+.add-item {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.small-button {
+    background-color: #d2691e;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: #a0522d;
+}
+
+.search-bar {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d2691e;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.sorting-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sorting-buttons button {
+    background-color: #d2691e;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+.sorting-buttons button.active {
+    background-color: #a0522d;
+}
+
+.sorting-buttons button:hover {
+    background-color: #a0522d;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
