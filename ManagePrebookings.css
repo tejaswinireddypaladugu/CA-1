@@ -1,0 +1,40 @@
+/* PrebookingList.css */
+
+.prebooking-list {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url('C:\Users\Kalki\OneDrive\Desktop\Bakery\Bakery\sunshine_bakery\frontend\public\images\background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.prebooking-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: url('C:\Users\Kalki\OneDrive\Desktop\Bakery\Bakery\sunshine_bakery\frontend\public\images\header.jpg');
+}
+
+.prebooking-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prebooking-list th,
+.prebooking-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.prebooking-list th {
+    background-color: #f2f2f2;
+}
+
+.prebooking-list tr:hover {
+    background-color: #f1f1f1;
+}
