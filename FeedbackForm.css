@@ -1,0 +1,84 @@
+/* FeedbackForm.css */
+
+.feedback {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback input,
+.feedback textarea,
+.feedback select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.feedback button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback button:hover {
+    background-color: #218838;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+}
+
+.rating-symbol {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.rating-symbol.selected {
+    color: #ffd700;
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
